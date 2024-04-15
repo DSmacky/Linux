@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+#
+echo "System Information" > ~/output.txt
+echo "" >> ~/output.txt
+echo "#####################################################" >> ~/output.txt
+echo "BASIC SYSTEM INFORMATION" >> ~/output.txt
+sudo dmidecode -t system >> ~/output.txt
+echo "" >> ~/output.txt
+echo "#####################################################" >> ~/output.txt
+echo "LINUX SYSTEM INFORMATION" >> ~/output.txt
+uname -a >> ~/output.txt
+echo "" >> ~/output.txt
+echo "#####################################################" >> ~/output.txt
+echo "LIST BLOCK DEVICES" >> ~/output.txt
+echo "" >> ~/output.txt
+lsblk >> ~/output.txt
+echo "" >> ~/output.txt
+echo "#####################################################" >> ~/output.txt
+echo "FILESYSTEM FREE SPACE STATUS" >> ~/output.txt
+echo "" >> ~/output.txt
+df -h >> ~/output.txt
+echo "#####################################################" >> ~/output.txt
